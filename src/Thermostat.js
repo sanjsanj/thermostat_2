@@ -33,3 +33,13 @@ Thermostat.prototype.psButton = function() {
 Thermostat.prototype.resetButton = function() {
   this._temp = 20;
 };
+
+Thermostat.prototype.tempColor = function() {
+  if (this._temp < 18) {
+    return 'green';
+  };
+  if (this._temp < 25) {
+    return 'yellow';
+  };
+  return 'red';
+};
