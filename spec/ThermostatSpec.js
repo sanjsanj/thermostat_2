@@ -28,7 +28,11 @@ describe('Thermostat', function() {
       thermostat.downButton();
       expect(thermostat.temp()).toBe(19);
     });
-    
+
+    it('toggle power saving mode off', function() {
+      thermostat.psButton();
+      expect(thermostat.psStatus()).toBe(false);
+    });
   });
 
   describe('has', function() {

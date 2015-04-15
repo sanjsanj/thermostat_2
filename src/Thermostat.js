@@ -22,3 +22,7 @@ Thermostat.prototype.downButton = function() {
 Thermostat.prototype.psStatus = function() {
   return this._psMode;
 };
+
+Thermostat.prototype.psButton = function() {
+  this._psMode = !this._psMode;
+};
