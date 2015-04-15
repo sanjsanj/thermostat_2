@@ -33,6 +33,14 @@ describe('Thermostat', function() {
       thermostat.psButton();
       expect(thermostat.psStatus()).toBe(false);
     });
+
+    it('reset the temp to 20', function() {
+      for (var i = 0; i < 20; i ++) {
+        thermostat.upButton();
+      };
+      thermostat.resetButton();
+      expect(thermostat.temp()).toBe(20);
+    });
   });
 
   describe('has', function() {
