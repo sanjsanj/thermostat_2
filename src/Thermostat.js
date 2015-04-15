@@ -28,6 +28,9 @@ Thermostat.prototype.psStatus = function() {
 
 Thermostat.prototype.psButton = function() {
   this._psMode = !this._psMode;
+  if (this._temp > 25) {
+    this._temp = 25;
+  };
 };
 
 Thermostat.prototype.resetButton = function() {

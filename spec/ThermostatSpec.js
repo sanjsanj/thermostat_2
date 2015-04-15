@@ -41,6 +41,15 @@ describe('Thermostat', function() {
       thermostat.resetButton();
       expect(thermostat.temp()).toBe(20);
     });
+
+    it('set the temp to 25 when power saving mode is enabled', function() {
+      thermostat.psButton();
+      for (var i = 0; i < 20; i ++) {
+        thermostat.upButton();
+      };
+      thermostat.psButton();
+      expect(thermostat.temp()).toBe(25);
+    });
   });
 
   describe('has', function() {
