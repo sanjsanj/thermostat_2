@@ -8,7 +8,10 @@ Thermostat.prototype.temp = function() {
 };
 
 Thermostat.prototype.upButton = function() {
-  if (this._temp < 25) {
+  if (this._psMode && this._temp < 25) {
+    this._temp ++;
+  };
+  if (!this._psMode && this._temp < 32) {
     this._temp ++;
   };
 };

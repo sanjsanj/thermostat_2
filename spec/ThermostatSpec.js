@@ -50,5 +50,13 @@ describe('Thermostat', function() {
       };
       expect(thermostat.temp()).toBe(25);
     });
+
+    it('a maximum temp of 32 with power saving mode off', function() {
+      thermostat.psButton();
+      for (var i = 0; i < 20; i ++) {
+        thermostat.upButton();
+      };
+      expect(thermostat.temp()).toBe(32);
+    });
   });
 });
