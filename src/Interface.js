@@ -13,4 +13,10 @@ $(document).ready(function(){
     thermostat.downButton();
     $('#temp').text(thermostat.temp());
   });
+
+  $('#psStatus').change(function(){
+    thermostat.psButton();
+      $('#temp').text(thermostat.temp());
+  });
+
 });

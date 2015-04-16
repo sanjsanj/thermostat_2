@@ -22,4 +22,10 @@ describe('Interface', function() {
     $('#down').click();
     expect('#temp').toContainText('19');
   });
+
+  it('displays gree text when temp is below 18 degrees', funtion(){
+    $('#down').click();
+    $('#down').click();
+    expect('#temp').css("color")).toEqual('green');
+  });
 });
