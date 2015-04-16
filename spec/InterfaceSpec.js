@@ -9,11 +9,15 @@ describe('Interface', function() {
     expect('#temp').toContainText('20');
   });
 
+  it('displays power saving mode on by default', function(){
+    expect('#psStatus').toBeChecked();
+  });
+
   it('can increase temp by 1', function(){
     $("#up").click();
     expect('#temp').toContainText('21');
   });
-  
+
   it('can decrease temp by 1', function(){
     $('#down').click();
     expect('#temp').toContainText('19');
