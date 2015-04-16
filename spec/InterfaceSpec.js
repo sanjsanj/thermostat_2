@@ -23,9 +23,24 @@ describe('Interface', function() {
     expect('#temp').toContainText('19');
   });
 
-  it('displays gree text when temp is below 18 degrees', funtion(){
+  it('displays green text when temp is below 18 degrees', function(){
     $('#down').click();
     $('#down').click();
-    expect('#temp').css("color")).toEqual('green');
+    $('#down').click();
+    expect($('#temp').css('color')).toEqual('rgb(19, 113, 50)');
+  });
+
+  it('displays yellow text when temp is between 18 and 25 degrees', function(){
+    expect($('#temp').css('color')).toEqual('rgb(19, 113, 50)');
+  });
+
+  it('displays red text when temp is above 25 degrees', function(){
+    $('#up').click();
+    $('#up').click();
+    $('#up').click();
+    $('#up').click();
+    $('#up').click();
+    $('#up').click();
+    expect($('#temp').css('color')).toEqual('rgb(19, 113, 50)');
   });
 });
