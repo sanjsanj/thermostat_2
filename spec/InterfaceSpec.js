@@ -31,7 +31,7 @@ describe('Interface', function() {
   });
 
   it('displays yellow text when temp is between 18 and 25 degrees', function(){
-    expect($('#temp').css('color')).toEqual('rgb(19, 113, 50)');
+    expect($('#temp').css('color')).toEqual('rgb(223, 193, 55)');
   });
 
   it('displays red text when temp is above 25 degrees', function(){
@@ -41,6 +41,6 @@ describe('Interface', function() {
     $('#up').click();
     $('#up').click();
     $('#up').click();
-    expect($('#temp').css('color')).toEqual('rgb(19, 113, 50)');
+    expect($('#temp').css('color')).toEqual('rgb(204, 51, 51)');
   });
 });
