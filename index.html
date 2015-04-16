@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="src/Thermostat.js"></script>
 <script src="src/Interface.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="public/thermostat.css">
   <title></title>
 </head>
+
 <body>
-<h1 id='temp'>0</h1>
-<button id='up'> + </button>
-<button id='down'>-</button>
-<input id='psStatus' type="checkbox" checked>Power Save Mode
+  <section class="container">
+   <div class='thermostat'>
+   <div class='font'>
+    <span class="degrees"> &deg;C</span>
+     <h1 id='temp'></h1>
+    </div>
+    <span class="buttons">
+     <button id='up'> + </button>
+     <button id='down'>-</button>
+     <input id='psStatus' type="checkbox" checked>Power Save Mode
+     </span>
+    </div>
+  </section>
 </body>
 </html>

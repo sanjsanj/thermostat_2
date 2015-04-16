@@ -1,0 +1,53 @@
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.thermostat {
+  width: 300px;
+  border: 1px solid #979797;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font {
+  font-size: 25pt;
+  text-align: center;
+}
+
+.degrees {
+  color: #777;
+  position: absolute;
+}
+
+#up {
+  width:30px;
+  height:30px;
+  color: #999999;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+#down {
+  width:30px;
+  height:30px;
+  color: #999999;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.buttons {
+ position: align;
+}
+
+#psStatus {
+  width: 30px;
+  height: 30px;
+}
