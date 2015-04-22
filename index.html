@@ -5,15 +5,13 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="src/Thermostat.js"></script>
 <script src="src/Interface.js"></script>
-<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="public/reset.css">
 <link rel="stylesheet" type="text/css" href="public/thermostat.css">
   <title></title>
 </head>
 
 <body>
-    <button id="powerbutton">
-      power
-    </button>
+  <section class="wrapper">
   <section class="container">
    <div class='thermostat'>
    <div class='font'>
@@ -28,6 +26,8 @@
      </span>
     <marquee behavior="scroll" direction="left">Temperature in London is <span id="outsideTemperature"></span>°</marquee>
     </div>
+  </section>
+  <button id="powerbutton">power</button>
   </section>
 </body>
 </html>
