@@ -2,7 +2,7 @@ var thermostat = new Thermostat();
 
 $(document).ready(function(){
 
-  var OpenWeather = 'http://api.openweathermap.org/data/2.5/weather?q=London,uk'
+  var OpenWeather = 'https://api.openweathermap.org/data/2.5/weather?q=London,uk'
 
   $('#powerbutton').click(function(){
     $('.screen').fadeToggle();
