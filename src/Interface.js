@@ -6,6 +6,7 @@ $(document).ready(function(){
 
   $('#powerbutton').click(function(){
     $('.screen').fadeToggle();
+    $('.buttons').fadeToggle();
     thermostat.resetButton();
     updateColor();
     $('#temp').text(thermostat.temp());

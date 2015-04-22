@@ -13,24 +13,28 @@
   <body>
     <section class="wrapper">
       <section class="container">
-        <div class='thermostat'>
-          <section class='screen'>
-            <marquee class="marquee" behavior="scroll" direction="left">
-              Temperature in London is <span id="outsideTemperature"></span>°
-            </marquee>
-            <div class='font'>
-              <h1 id='temp'></h1>
-              <span class="degrees"> &deg;C</span>
-            </div>
-              <span class="buttons">
-                 <button id='resetbutton'></button>
-                 <button id='up'></button>
-                 <button id='down'></button>
-                 <button id='psStatus'></button>
-              </span>
-          </section>
+        <div class='sheen2'>
         </div>
-        <br>
+          <div class='thermostat'>
+            <span class="buttons">
+              <button id='resetbutton'></button>
+              <button id='up'></button>
+              <button id='down'></button>
+              <button id='psStatus'></button>
+            </span>
+            <div class='sheen'>
+            </div>
+            <section class='screen'>
+              <marquee class="marquee" behavior="scroll" direction="left">
+                Temperature in London is <span id="outsideTemperature"></span>°
+              </marquee>
+              <div class='font'>
+                <h1 id='temp'></h1>
+                <span class="degrees"> &deg;C</span>
+              </div>
+
+            </section>
+          </div>
         <button id="powerbutton"></button>
       </section>
     </section>
