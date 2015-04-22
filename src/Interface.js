@@ -23,13 +23,13 @@ $(document).ready(function(){
   };
 
   var updateColor = function() {
-     if (thermostat.tempColor() === 'green' ) {
-        $("#temp").css({'color' : 'rgb(19, 113, 50)', 'font-size' : '200%'});
-    } else if (thermostat.tempColor() === 'yellow') {
-        $("#temp").css({'color' : 'rgb(223, 193, 55)', 'font-size' : '200%'});
-    } else {
-        $("#temp").css({'color' : 'rgb(204, 51, 51)', 'font-size' : '200%'});
-    };
+    //  if (thermostat.tempColor() === 'green' ) {
+    //     $("#temp").css({'color' : 'rgb(19, 113, 50)', 'font-size' : '200%'});
+    // } else if (thermostat.tempColor() === 'yellow') {
+    //     $("#temp").css({'color' : 'rgb(223, 193, 55)', 'font-size' : '200%'});
+    // } else {
+    //     $("#temp").css({'color' : 'rgb(204, 51, 51)', 'font-size' : '200%'});
+    // };
   };
 
   $('#temp').text(thermostat.temp());

@@ -1,48 +1,75 @@
 .wrapper {
-  display: flex;
-  flex-direction: column;
-  flex-flow: row wrap;
-  justify-content: center;
-  height: 1000px;
-  align-items: center;
+  position: relative;
+}
+
+@font-face{
+  font-family: digital;
+  src:url("digital-7 (mono).ttf");
 }
 
 .container {
-  order: 1;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
   background-color: black;
+  border-radius: 25px;
   height: 500px;
   width: 375px;
-  border-radius: 25px;
-  display: flex;
-  align-items: center;
+  margin-top: 6%;
 }
 
 .thermostat {
-  order: 1;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #2D6FEB;
   height: 65%;
   width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
   border-radius: 4px;
+  top: 42%;
+  transform: translateY(-50%);
 }
 
 #powerbutton {
-  order: 2;
-  height: 50px;
-  width: 50px;
-  border-radius: 25px;
+  display: block;
+  background: #778899;
+  background-size: 60px 60px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+  transform: translateY(110%);
+  background-image: url(powerButton.svg);
+}
+
+#temp {
+  display: inline;
+  position: relative;
+  font-family: digital;
+  color: #fafafa;
+  font-size: 12em;
+  margin-left: 37.5px;
+  top: 40px;
+}
+
+.degrees {
+  display: inline;
+  position: relative;
+  font-family: digital;
+  color: #fafafa;
+  font-size: 4em;
 }
 
 h1 {
 }
 
 .font {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.degrees {
-}
 
 #up {
 }

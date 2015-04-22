@@ -15,9 +15,10 @@
       <section class="container">
         <div class='thermostat'>
           <section class='screen'>
+            <marquee class="marquee" behavior="scroll" direction="left">Temperature in London is <span id="outsideTemperature"></span>°</marquee>
             <div class='font'>
-              <span class="degrees"> &deg;C</span>
                 <h1 id='temp'></h1>
+              <span class="degrees"> &deg;C</span>
             </div>
               <span class="buttons">
                  <button id='up'>+</button>
@@ -25,11 +26,10 @@
                  <button id='resetbutton'>reset</button>
                  <input id='psStatus' type="checkbox" checked>Power Save Mode
               </span>
-            <marquee behavior="scroll" direction="left">Temperature in London is <span id="outsideTemperature"></span>°</marquee>
           </section>
         </div>
         <br>
-        <button id="powerbutton">power</button>
+        <button id="powerbutton"></button>
       </section>
     </section>
   </body>
