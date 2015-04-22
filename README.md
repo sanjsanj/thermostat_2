@@ -3,7 +3,23 @@ My athletic restart of the Thermostat Javascript exercise.  Backend started by m
 
 ###[iThermo web app on Heroku](http://ithermo.herokuapp.com)
 
-![iThermo screenshot]()
+![iThermo screenshot](http://sanjsanj.github.io/images/week6_ithermo.png)
+
+Tools:
+------
+Testing:
+- Jasmine
+- Jasmine JQuery
+
+Application Code:
+- JavaScript
+- JQuery
+- HTML
+- CSS
+
+Other:
+- Sinatra
+- PHP
 
 Contributors:
 -------------
