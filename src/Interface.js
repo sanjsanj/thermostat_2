@@ -49,9 +49,10 @@ $(document).ready(function(){
     $('#temp').text(thermostat.temp());
   });
 
-  $('#psStatus').change(function(){
+  $('#psStatus').click(function(){
     thermostat.psButton();
-      $('#temp').text(thermostat.temp());
+    $('#temp').text(thermostat.temp());
+    // $('#psStatus').css
   });
 
   $('#resetbutton').click(function(){

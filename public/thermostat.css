@@ -1,5 +1,5 @@
 .wrapper {
-  position: relative;
+/*  position: relative;*/
 }
 
 @font-face{
@@ -51,7 +51,7 @@
   color: #fafafa;
   font-size: 12em;
   margin-left: 37.5px;
-  top: 40px;
+  top: 10px;
 }
 
 .degrees {
@@ -70,15 +70,53 @@ h1 {
   margin-right: auto;
 }
 
+.marquee{
+  margin-top: 5%;
+  font-family: digital;
+  color: #fafafa;
+  font-size: 1.5em;
+}
+
 
 #up {
+  border: 0;
+  background-color: #2D6FEB;
+  background-size: 60px 60px;
+  background-image: url(up.svg);
+  height: 60px;
+  width: 60px;
 }
 
 #down {
+  border: 0;
+  background-color: #2D6FEB;
+  background-size: 60px 60px;
+  background-image: url(down.svg);
+  height: 60px;
+  width: 60px;
+}
+
+#resetbutton {
+  border: 0;
+  background-color: #2D6FEB;
+  background-size: 40px 40px;
+  background-image: url(reset.png);
+  height: 40px;
+  width: 40px;
 }
 
 .buttons {
-}
+  position: absolute;
+  bottom: 20px;
+  margin-left: 40px;
+/*  margin-right: auto;
+*/}
 
 #psStatus {
+  border: 0;
+  background-color: #2D6FEB;
+  background-size: 40px 40px;
+  background-image: url(power_saver.svg);
+  height: 40px;
+  width: 40px;
 }
