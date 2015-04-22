@@ -20,6 +20,7 @@ Application Code:
 Other:
 - Sinatra
 - PHP
+- OpenWeather API
 
 Contributors:
 -------------
