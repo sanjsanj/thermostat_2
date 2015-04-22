@@ -4,6 +4,9 @@ $(document).ready(function(){
 
   $('#powerbutton').click(function(){
     $('.container').toggle();
+    thermostat.resetButton();
+    updateColor();
+    $('#temp').text(thermostat.temp());
   });
 
   var updateColor = function() {
@@ -15,6 +18,7 @@ $(document).ready(function(){
         $("#temp").css({'color' : 'rgb(204, 51, 51)', 'font-size' : '200%'});
     };
   };
+
   $('#temp').text(thermostat.temp());
   $('#temp').text(function(){
     updateColor();
@@ -37,6 +41,10 @@ $(document).ready(function(){
       $('#temp').text(thermostat.temp());
   });
 
-
+  $('#resetbutton').click(function(){
+    thermostat.resetButton();
+    updateColor();
+    $('#temp').text(thermostat.temp());
+  });
 
 });

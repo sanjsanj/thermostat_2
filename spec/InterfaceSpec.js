@@ -5,9 +5,16 @@ describe('Interface', function() {
     loadFixtures('index.html');
   });
 
+  // Couldn't get to work due to fade delay.
   it('can toggle off', function(){
+    $("#powerbutton").click()
+    expect($('.container').is(":hidden")).toBe(true)
+  });
+
+  it('can toggle on', function() {
     $("#powerbutton").click();
-    expect($('.container').is(":hidden")).toBe(true);
+    $("#powerbutton").click();
+    expect($('.container').is(":visible")).toBe(true);
   });
 
   it('displays default temp', function(){
