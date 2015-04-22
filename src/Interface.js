@@ -2,6 +2,10 @@ var thermostat = new Thermostat();
 
 $(document).ready(function(){
 
+  $('#powerbutton').click(function(){
+    $('.container').toggle();
+  });
+
   var updateColor = function() {
      if (thermostat.tempColor() === 'green' ) {
         $("#temp").css({'color' : 'rgb(19, 113, 50)', 'font-size' : '200%'});

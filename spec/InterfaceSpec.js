@@ -5,6 +5,11 @@ describe('Interface', function() {
     loadFixtures('index.html');
   });
 
+  it('can toggle off', function(){
+    $("#powerbutton").click();
+    expect($('.container').is(":hidden")).toBe(true);
+  });
+
   it('displays default temp', function(){
     expect('#temp').toContainText('20');
   });
