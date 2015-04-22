@@ -10,24 +10,27 @@
   <title></title>
 </head>
 
-<body>
-  <section class="wrapper">
-  <section class="container">
-   <div class='thermostat'>
-   <div class='font'>
-    <span class="degrees"> &deg;C</span>
-     <h1 id='temp'></h1>
-    </div>
-    <span class="buttons">
-     <button id='up'>+</button>
-     <button id='down'>-</button>
-     <button id='resetbutton'>reset</button>
-     <input id='psStatus' type="checkbox" checked>Power Save Mode
-     </span>
-    <marquee behavior="scroll" direction="left">Temperature in London is <span id="outsideTemperature"></span>°</marquee>
-    </div>
-  </section>
-  <button id="powerbutton">power</button>
-  </section>
-</body>
+  <body>
+    <section class="wrapper">
+      <section class="container">
+        <div class='thermostat'>
+          <section class='screen'>
+            <div class='font'>
+              <span class="degrees"> &deg;C</span>
+                <h1 id='temp'></h1>
+            </div>
+              <span class="buttons">
+                 <button id='up'>+</button>
+                 <button id='down'>-</button>
+                 <button id='resetbutton'>reset</button>
+                 <input id='psStatus' type="checkbox" checked>Power Save Mode
+              </span>
+            <marquee behavior="scroll" direction="left">Temperature in London is <span id="outsideTemperature"></span>°</marquee>
+          </section>
+        </div>
+        <br>
+        <button id="powerbutton">power</button>
+      </section>
+    </section>
+  </body>
 </html>

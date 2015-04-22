@@ -5,7 +5,7 @@ $(document).ready(function(){
   var OpenWeather = 'http://api.openweathermap.org/data/2.5/weather?q=London,uk'
 
   $('#powerbutton').click(function(){
-    $('.container').fadeToggle();
+    $('.screen').fadeToggle();
     thermostat.resetButton();
     updateColor();
     $('#temp').text(thermostat.temp());
